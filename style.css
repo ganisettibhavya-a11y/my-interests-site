@@ -15,7 +15,7 @@ header { background: #222; color: #fff; padding: 15px 30px; position: sticky; to
 .nav-links a:hover { color: #ffd54f; }
 .logo { font-size: 20px; font-weight: 600; }
 
-/* Hero */
+/* Hero Section */
 .hero {
   text-align: center;
   padding: 60px 20px;
@@ -35,15 +35,19 @@ header { background: #222; color: #fff; padding: 15px 30px; position: sticky; to
   transition: 0.3s;
 }
 .hero .btn:hover { background: #fff; }
-.profile-img { width: 120px; height: 120px; border-radius: 50%; margin-bottom: 15px; border: 4px solid #fff; }
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: block;
+  border: 4px solid #fff;
+}
 .social-icons a { margin: 0 10px; color: white; font-size: 24px; transition: 0.3s; }
 .social-icons a:hover { color: #ffd54f; }
 
-/* About, Interests, Contact */
-.about, .interests, .contact, .admire {
-  padding: 60px 20px;
-  text-align: center;
-}
+/* Sections */
+.about, .interests, .contact, .admire { padding: 60px 20px; text-align: center; }
 h2 { margin-bottom: 20px; font-size: 28px; color: #333; }
 
 /* Interests Cards */
@@ -85,4 +89,10 @@ footer { background: #222; color: white; text-align: center; padding: 15px 0; ma
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+  .nav-links { flex-direction: column; gap: 10px; }
+  .cards, .admire-cards { grid-template-columns: 1fr; }
 }
