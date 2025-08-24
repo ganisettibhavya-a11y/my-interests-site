@@ -3,51 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bhavya's Portfolio</title>
+  <title>Bhavya | Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/6f5b67d6f1.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  
   <!-- Navbar -->
   <header>
     <nav class="navbar">
       <div class="logo">Bhavya</div>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>Welcome to My Portfolio 🌸</h1>
-      <p>I love coding, designing, and building beautiful digital experiences.</p>
-      <a href="#projects" class="btn">Explore My Work</a>
+  <section id="home" class="hero">
+    <img src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Profile" class="profile-img">
+    <h1>Hello, I'm <span>Bhavya</span> 👋</h1>
+    <p>I love coding, designing, and exploring new technologies 🚀</p>
+    <a href="#about" class="btn">Know More</a>
+    <div class="social-icons">
+      <a href="https://github.com/ganisettibhavya-a11y" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
     </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I'm a passionate learner who enjoys solving problems, building projects, and growing as a developer. 
+      This is my portfolio where I share my journey in coding, creativity, and innovation 🌸
+    </p>
   </section>
 
   <!-- Interests Section -->
   <section id="interests" class="interests">
-    <h2>✨ My Interests</h2>
-    <p>I enjoy <span>Web Development</span>, <span>UI/UX Design</span>, and <span>Exploring New Technologies</span>.</p>
+    <h2>My Interests</h2>
+    <div class="cards">
+      <div class="card">💻 Coding</div>
+      <div class="card">🎨 Designing</div>
+      <div class="card">📚 Learning</div>
+      <div class="card">🚀 Exploring Tech</div>
+    </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <h2>💻 Projects</h2>
-    <div class="project-grid">
-      <div class="card">Portfolio Website</div>
-      <div class="card">E-commerce UI</div>
-      <div class="card">Blog Platform</div>
-    </div>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:yourmail@gmail.com">yourmail@gmail.com</a></p>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Bhavya | Made with ❤️ and Coffee ☕</p>
+    <p>Made with ❤️ by Bhavya</p>
   </footer>
+
 </body>
 </html>
